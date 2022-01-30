@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
-
+import { useState } from 'react';
+import Search from './components/Search';
+import { Text } from '@chakra-ui/react';
+import NoteList from './components/NoteList';
+import AddNote from './components/AddNote';
 function App() {
+  const [search, setSearch] = useState("");
+  const handleChange = (e) => setSearch(e.target.value);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Text fontSize='5xl' textAlign="center" fontWeight="black" color="blue.800">Todo App</Text>
+     <Search search={search} onSearchChange={handleChange}  />
+     <AddNote />
+     <NoteList  search={search} />
     </div>
   );
 }

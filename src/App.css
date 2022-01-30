@@ -1,38 +1,106 @@
-.App {
+.red-button {
+  background-color: red;
+  color: white;
+  border: none;
+  width: 30px;
+  height: 30px;
   text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 50%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.purple-button {
+  background-color: purple;
+  color: white;
+  border: none;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 50%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.black-button {
+  background-color: black;
+  color: white;
+  border: none;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 50%;
 }
+.yellow-button {
+  background-color: yellow;
+  color: black;
+  border: none;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  border-radius: 50%;
+}
+.green-button {
+  background-color: green;
+  color: white;
+  border: none;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.active {
+ border: 2px solid #7289da;
+}
+.container{
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  color: rgb(92, 92, 92);
+  padding: 20px;
+  font-size: 18px;
+}
+.todo {
+  padding: 15px;
+  display: flex;
+  width: 300px;
+  margin: auto;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  border-radius: 5px;
+  margin: 20px;
 }
-
-.App-link {
-  color: #61dafb;
+.red {
+  background-color: rgb(243, 76, 76);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.black{
+  background-color: rgb(34, 33, 33);
+}
+.yellow{
+  background-color: rgb(247, 247, 138);
+}
+.green{
+  background-color: rgb(112, 243, 133);
+}
+.purple{
+  background-color: rgb(191, 136, 255);
+}
+.blacktext{
+  color: black;
+}
+.graytext{
+  color: rgb(241, 241, 241);
 }
