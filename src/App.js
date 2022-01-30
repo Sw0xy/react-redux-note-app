@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className="App">
-      <Text fontSize='5xl' textAlign="center" fontWeight="black" color="blue.800">Todo App</Text>
+      <Text fontSize='5xl' textAlign="center" fontWeight="black" color="blue.800">Note App</Text>
      <Search search={search} onSearchChange={handleChange}  />
      <AddNote />
      <NoteList  search={search} />
