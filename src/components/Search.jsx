@@ -11,7 +11,7 @@ function Search( { search , onSearchChange} ) {
       }}
     >
       <Input
-        placeholder="Search todo.."
+        placeholder="Search notes..."
         allowClear
         value={search}
         onChange={onSearchChange}
